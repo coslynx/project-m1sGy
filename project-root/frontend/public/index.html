@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Allocation App</title>
+</head>
+<body>
+    <h1>Welcome to the Room Allocation App</h1>
+    <p>Upload your CSV files containing group and hostel information to allocate rooms based on specific criteria.</p>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="groupFile" accept=".csv" required>
+        <input type="file" name="hostelFile" accept=".csv" required>
+        <button type="submit">Upload Files</button>
+    </form>
+    <div id="allocationDetails">
+        <!-- Display allocated rooms with group members here -->
+    </div>
+    <a id="downloadLink" href="#" download="allocation_details.csv">Download Allocation Details</a>
+
+    <script src="index.js"></script>
+</body>
+</html>
